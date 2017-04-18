@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= htmlWebpackPlugin.options.pageTitle %></title>
+    <%= htmlWebpackPlugin.options.publicCSS %>
+    <%= htmlWebpackPlugin.options.privateCSS %>
+</head>
+<body>
+    <div id="root"></div>
+    <%= htmlWebpackPlugin.options.publicJS %>
+    <%= htmlWebpackPlugin.options.privateJS %>
+</body>
+</html>

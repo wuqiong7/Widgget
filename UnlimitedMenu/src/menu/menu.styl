@@ -1,0 +1,81 @@
+.fn-hide{
+  display: none;
+}
+
+.menu-container {
+  overflow: hidden;
+  .search-box {
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    position: relative;
+    z-index: 2;
+    input {
+      height: 32px;
+      font-size: 14px;
+    }
+    .no-data {
+      margin-top: 10px;
+      margin-bottom: -10px;
+      color: #f04134;
+    }
+  }
+
+  .menu-panel {
+    li {
+      position: relative;
+      div {
+        border-right: 4px solid transparent;
+        border-bottom: 1px solid #ececec;
+        // loading
+        &.ant-spin {
+          margin-left: -18px;
+          margin-right: 4px;
+          border-right: 0 none;
+          border-bottom: 0 none;
+        }
+        &.active {
+          background-color: #f0faf4;
+          border-right-color: #3cbc70;
+        }
+        a {
+          display: block;
+          padding: 0 45px 0 16px;
+          line-height: 42px;
+          height: 42px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 14px;
+          color: #333;
+        }
+        // 下撰icon
+        i.anticon {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 60px;
+          height: 43px;
+          padding-top: 12px
+          cursor: pointer;
+        }
+      }
+      // for
+      & > ul > li a {
+        padding-left: 30px;
+      }
+      & > ul > li > ul > li a {
+        padding-left: 42px;
+      }
+      & > ul > li > ul > li > ul > li a {
+        padding-left: 54px;
+      }
+      & > ul > li  > ul > li > ul > li > ul > li a {
+        padding-left: 66px;
+      }
+    }
+  }
+}
